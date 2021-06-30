@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block title %} FAQ {% endblock %}
+
+{% block content %}
+<div class="mainContainer">
+	{% include 'slider.html' %}
+
+	<h2 align="center" style="margin-top: 1.5em; margin-bottom: 1.1em;"><b>Frequently Asked Questions</b></h2>
+	<div class="columnsContainer">
+		<div class="leftColumn">
+			<div class="article">
+				<p>Ang website ng Department of Health (DOH) ay mayroong malawak na listahan ng mga karaniwang tinatanong ng mga tao ukol sa pagpapa-bakuna, tulad na lamang ng dahilan para magpa-bakuna, kung maaari bang tanggihan ang pagpapa-bakuna, at iba pa. Para malaman ang mga kasagutan sa mga tanong na ito at sa iba pang katanungan, pindutin lamang ang <a href="https://doh.gov.ph/vaccines/Questions-and-Answers" target="_blank"><b>link</b></a> na ito. Mag-scroll pababa sa webpage para makita ang iba't ibang tanong at sagot na inihanda ng DOH.</p>
+				<p>The Department of Health's (DOH) website has an extensive list of frequently asked questions regarding vaccination, such as the reasons to get vaccinated, whether a person can refuse to get vaccinated or not, and more. To know the answers and more frequently asked questions, you may click on this <a href="https://doh.gov.ph/vaccines/Questions-and-Answers" target="_blank"><b>link</b></a>. Kindly scroll down on the webpage to view the questions. </p>
+			</div>
+
+			<div class="article">
+				<h3><b>#ChecktheFAQs: A Campaign to Fight Vaccine Misinformation!</b></h3>
+				<br>
+				<div class="w3-content w3-display-container">
+					<div class="w3-display-container mySlides">
+					  	<img src="{{ url_for('static', filename='images/faqs/Check the FAQs 1.jpg') }}" style="height:100%; width:100%">
+					  	<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							CHECK THE FAQS: CIRCULATING POST ALLEGEDLY BY A DOCTOR FROM HONG KONG
+					  	</div>
+					</div>
+
+					<div class="w3-display-container mySlides">
+					  	<img src="{{ url_for('static', filename='images/faqs/Check the FAQs 2.jpg') }}" style="height:100%; width:100%">
+					  	<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							CHECK THE FAQS: CIRCULATING VIDEO ABOUT CALLING OFF VACCINES
+						</div>
+					</div>
+
+					<div class="w3-display-container mySlides">
+					  	<img src="{{ url_for('static', filename='images/faqs/Check the FAQs 3.jpg') }}" style="height:100%; width:100%">
+					  	<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							CHECK THE FAQS: CIRCULATING VIDEO OF A CERTAIN PERSON TALKING ABOUT COVID-19
+						</div>
+					</div>
+
+					<div class="w3-display-container mySlides">
+					  	<img src="{{ url_for('static', filename='images/faqs/Check the FAQs 4.jpg') }}" style="height:100%; width:100%">
+					  	<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							CHECK THE FAQS: SOCIAL MEDIA CARD NA MAY LOGO NG DOH
+					  	</div>
+					</div>
+
+					<div class="w3-display-container mySlides">
+					  	<img src="{{ url_for('static', filename='images/faqs/Check the FAQs 5.jpg') }}" style="height:100%; width:100%">
+					  	<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							CHECK THE FAQS: CIRCULATING MISINFORMATION “HINDI TOTOONG MAY PANDEMYA SA COVID-19 DAHIL PAREHO LANG ANG BILANG NG MGA NAMAMATAY AT NAGKAKASAKIT SA COVID-19 AT TRANGKASO”
+					  	</div>
+					</div>
+
+					<div class="w3-display-container mySlides">
+					  	<img src="{{ url_for('static', filename='images/faqs/Check the FAQs 6.jpg') }}" style="height:100%; width:100%">
+					  	<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							CHECK THE FAQS: VIDEO OF A CERTAIN THERAPIST WITH FALSE CLAIMS ABOUT THE VACCINES
+					  	</div>
+					</div>
+
+					<div class="w3-display-container mySlides">
+					  	<img src="{{ url_for('static', filename='images/faqs/Check the FAQs 7.jpg') }}" style="height:100%; width:100%">
+					  	<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							CHECK THE FAQS: KUMAKALAT NA VIDEO NA NAGSASABI NA MAS MAPANGANIB ANG BAKUNA KAYSA SA COVID-19
+					  	</div>
+					</div>
+
+					<div class="w3-display-container mySlides">
+					  	<img src="{{ url_for('static', filename='images/faqs/Check the FAQs 8.jpg') }}" style="height:100%; width:100%">
+					  	<div class="w3-display-topleft w3-small w3-container w3-padding-16 w3-black">
+							CHECK THE FAQS: CIRCULATING POST CLAIMING THAT DEATH WILL OCCUR 2 YEARS AFTER VACCINATION
+					  	</div>
+					</div>
+
+					<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+				</div>
+				<br>
+			</div>
+
+		</div>
+
+		<div class="rightColumn">
+			{% include 'rightColumn.html' %}
+		</div>
+	</div>
+</div>
+
+{% endblock %}
+

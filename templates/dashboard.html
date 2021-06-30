@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Database</h1>
+    <table border="5">
+        <thead>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Username</td>
+        </thead>
+
+        {% for row in rows %}
+        <tr>
+            <td>{{ row["Firstname"] }}</td>
+            <td>{{ row["Lastname"] }}</td>
+            <td>{{ row["Username"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

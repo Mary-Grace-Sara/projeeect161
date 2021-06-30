@@ -1,0 +1,152 @@
+ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+}
+.mainContainer{
+    position: absolute;
+    z-index: 3;
+    top: 4.2em;
+}
+.columnsContainer {
+    margin: auto;
+    position: relative;
+    max-width: 80%;
+}
+.leftColumn {
+margin-bottom: .5em; margin-top: .75em;}
+
+/* RESPONSIVE COLUMN */
+@media screen and (min-width: 52.5em ) {
+    .leftColumn { margin-right: 21.5em;}
+	.rightColumn { position: absolute; top: 0; right: 0; width: 20.75em; }
+}
+
+/* SLIDESHOW */
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+div#slider { overflow: hidden;}
+div#slider figure img { width: 20%; float: left;}
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite;
+}
+.form-control {
+	box-shadow: none;
+	font-weight: normal;
+	font-size: 13px;
+}
+.article {
+    position: relative;
+    margin: auto;
+    margin-top: .85em;
+    max-width: 100%;
+    padding: 1.25em;
+    background-color: white;
+    box-sizing: content-box;
+    box-sizing: border-box;
+    border: 1px solid gainsboro;
+}
+.article p{
+    font-size: 11pt;
+    ont-family: verdana;
+    text-align: justify;
+    line-height: 25px;
+}
+.article h5{
+    text-align: center;
+}
+.text1 {
+    color: white;
+    margin: auto;
+    text-align: left;
+    margin-left: 10px;
+}
+.box11, .box12, .box13 {
+    position: relative;
+    background-color: white;
+    min-width: 100%;
+    border: 1px solid gainsboro;
+}
+.box11{
+    min-height: 300px;
+}
+
+.box12 {
+    min-height: 195px;
+}
+
+.box13 {
+    min-height: 120px;
+}
+
+.box2 {
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    background-color: gainsboro;
+    min-height: 30px;
+    min-width: 100%;
+}
+
+.box3 {
+    position: relative;
+    background-color: white;
+    min-height: 30px;
+    min-width: 100%;
+}
+
+.box3:hover{
+    background-color: #00008B;
+}
+
+.box32 {
+    position: relative;
+    background-color: white;
+    min-height: 30px;
+    min-width: 100%;
+}
+
+.head {
+    margin-left:10%;
+    margin-right:100px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.article-title{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.article-content{
+    font-size: 12px;
+    text-align: center;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
